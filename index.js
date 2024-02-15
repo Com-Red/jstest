@@ -50,3 +50,27 @@ nav.replaceChild(linav2, linav);
 
 // удаление всех элементов в блоке
 // nav.removeChild(nav.firstChild);
+
+
+// поиск элемента кнопка и установка на нее действия функции
+let knopa = document.getElementById('knopa');
+function knop (){
+    let a = linav2.textContent;
+    console.log(a);
+}
+knopa.addEventListener('click', knop);
+
+let class2 = document.getElementById('class');
+let knopa2 = document.getElementById('knopa2');
+
+// смена класса блока по нажатию кнопки
+function class3 (){
+    if (class2.className == 'test'){
+        class2.className = 'test2';
+    }
+    else{
+        class2.className = 'test'
+    }
+}
+knopa2.addEventListener('click', class3);
+

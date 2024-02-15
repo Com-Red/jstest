@@ -5,3 +5,10 @@
 p {
     text-align: justify;
 }
+.test{
+    background-color: aqua;
+}
+.test2{
+    background-color: blue;
+    color: aliceblue;
+}
