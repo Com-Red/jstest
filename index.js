@@ -1,4 +1,4 @@
-import json from './data.json' assert {type: 'json'};
+import json from './data.js';
 
 // поиск элементов страницы
 let testdiv = document.getElementById('testdiv');
@@ -9,6 +9,8 @@ testdiv2.textContent = json.text;
 
 // получение информации о кол-ве информации в объекте
 let tes = Object.values(json.test).length;
+
+console.log(Object(json))
 
 // перебор и вывод информации из объекта в элемент меню
 function fun (x){
