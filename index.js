@@ -1,4 +1,4 @@
-import json from './data.js';
+import {json} from './data.js';
 
 // поиск элементов страницы
 let testdiv = document.getElementById('testdiv');
