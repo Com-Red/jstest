@@ -12,3 +12,19 @@ p {
     background-color: blue;
     color: aliceblue;
 }
+.divin{
+    height: 300px;
+    background-color: beige;
+    
+}
+.divin button{
+    width: 100px;
+}
+.divin p{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+.img1{
+    width: 200px;
+}

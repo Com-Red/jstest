@@ -74,3 +74,41 @@ function class3 (){
 }
 knopa2.addEventListener('click', class3);
 
+// маленький калькулятор на + и -
+let in1 = document.getElementById('in1');
+let in2 = document.getElementById('in2');
+let btnp = document.getElementById('btnp');
+let btnm = document.getElementById('btnm');
+let btnr = document.getElementById('btnr');
+let result = document.getElementById('result');
+
+let action = '+';
+
+btnp.onclick = function(){
+    action = '+'
+};
+btnm.onclick = function(){
+    action = '-'
+}
+
+function schet () {
+    if (action=='+'){
+        let sum = Number(in1.value) + Number(in2.value);
+        result.textContent = sum;
+    }
+    else{
+        let sum = Number(in1.value) - Number(in2.value);
+        result.textContent = sum;
+    }
+}
+
+btnr.addEventListener('click', schet);
+// ==========================
+
+// установка адреса изображения 
+let img1 = document.getElementById('img1');
+img1.src = json.img;
+img1.className = 'img1';
+
+
+
